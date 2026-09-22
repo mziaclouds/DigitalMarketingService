@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MZ Clouds – Home | Full Digital Marketing Agency</title>
     <meta name="description" content="MZ Clouds is a full-service digital marketing agency offering Local SEO, Google Maps ranking, GBP optimization, website SEO, social media marketing, Google Ads, Meta Ads, and reputation management." />
-    <link rel="canonical" href="https://mziaclouds.github.io/DigitalMarketingService/index.html" />
+    <link rel="canonical" href="https://www.mzclouds.com/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MZ Clouds – Full Digital Marketing & Local SEO Agency" />
@@ -109,42 +109,40 @@
         .btn-whatsapp-icon:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(37, 211, 102, 0.65); background: #20BD5A; }
         .btn-whatsapp-icon svg { width: 22px; height: 22px; fill: #fff; }
 
-        /* ✅ LOGO STYLES */
+        /* ✅ LOGO STYLES — Pure image, no text */
         .brand {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
             transition: opacity 0.25s ease;
+            flex-shrink: 0;
         }
-        .brand:hover { opacity: 0.88; }
+        .brand:hover { opacity: 0.9; }
 
+        /* Navbar logo — size tuned for readability */
         .brand-logo-img {
-            height: 48px;
+            height: 58px;
             width: auto;
+            max-width: 240px;
             display: block;
             object-fit: contain;
         }
 
-        .brand-text {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 800;
-            font-size: 20px;
-            color: var(--navy);
-            letter-spacing: -0.01em;
-            line-height: 1;
+        /* Footer logo — slightly larger for dark bg visibility */
+        .brand-footer .brand-logo-img {
+            height: 68px;
+            max-width: 280px;
         }
-        .brand-text .accent { color: var(--orange); }
 
-        /* Footer logo — bigger since footer bg is dark */
-        .brand-footer .brand-logo-img { height: 56px; }
-        .brand-footer .brand-text { color: #fff; font-size: 22px; }
-
-        /* Mobile adjustments */
+        /* Responsive logo sizes */
+        @media (max-width: 1024px) {
+            .brand-logo-img { height: 52px; max-width: 210px; }
+        }
         @media (max-width: 768px) {
-            .brand-logo-img { height: 38px; }
-            .brand-text { font-size: 18px; }
-            .brand-footer .brand-logo-img { height: 48px; }
-            .brand-footer .brand-text { font-size: 20px; }
+            .brand-logo-img { height: 46px; max-width: 190px; }
+            .brand-footer .brand-logo-img { height: 56px; max-width: 230px; }
+        }
+        @media (max-width: 480px) {
+            .brand-logo-img { height: 42px; max-width: 170px; }
         }
 
         /* Social Icons */
@@ -322,17 +320,14 @@
 
     <!-- ========== NAVBAR ========== -->
     <header id="navbar">
-        <div class="wrap flex items-center justify-between" style="height:80px;">
-            <!-- ✅ LOGO in Navbar -->
+        <div class="wrap flex items-center justify-between" style="height:90px;">
+            <!-- ✅ PURE LOGO — no extra text -->
             <a href="index.html" class="brand" aria-label="MZ Clouds home">
                 <img 
                     src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
-                    alt="MZ Clouds Logo" 
+                    alt="MZ Clouds – Full Digital Marketing Agency" 
                     class="brand-logo-img"
-                    width="48"
-                    height="48"
                 />
-                <span class="brand-text">MZ <span class="accent">Clouds</span></span>
             </a>
 
             <nav class="hidden lg:flex" aria-label="Primary">
@@ -680,18 +675,15 @@
         <div class="wrap">
             <div class="grid lg:grid-cols-2 gap-12 pb-14" style="border-bottom:1px solid rgba(255,255,255,0.06);">
                 <div>
-                    <!-- ✅ LOGO in Footer -->
+                    <!-- ✅ PURE LOGO in Footer -->
                     <a href="index.html" class="brand brand-footer" aria-label="MZ Clouds home">
                         <img 
                             src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
-                            alt="MZ Clouds Logo" 
+                            alt="MZ Clouds – Full Digital Marketing Agency" 
                             class="brand-logo-img"
-                            width="56"
-                            height="56"
                         />
-                        <span class="brand-text">MZ <span class="accent">Clouds</span></span>
                     </a>
-                    <p style="font-size:14px;color:#8195B8;margin-top:20px;line-height:1.7;max-width:440px;">Full-service digital marketing agency specializing in Local SEO, Google Maps ranking, website SEO, social media, and paid ads. We help local businesses get found and grow.</p>
+                    <p style="font-size:14px;color:#8195B8;margin-top:24px;line-height:1.7;max-width:440px;">Full-service digital marketing agency specializing in Local SEO, Google Maps ranking, website SEO, social media, and paid ads. We help local businesses get found and grow.</p>
 
                     <!-- SOCIAL MEDIA ICONS -->
                     <div class="flex gap-3 mt-8">
@@ -909,7 +901,7 @@
             });
         }
 
-        console.log('✨ MZ Clouds — Home Page with Logo');
+        console.log('✨ MZ Clouds — Home Page with Logo (Final)');
     </script>
 
 </body>
