@@ -109,7 +109,7 @@
         .btn-whatsapp-icon:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(37, 211, 102, 0.65); background: #20BD5A; }
         .btn-whatsapp-icon svg { width: 22px; height: 22px; fill: #fff; }
 
-        /* ✅ LOGO STYLES — BADA SIZE */
+        /* ✅ LOGO STYLES — WIDE + BIG */
         .brand {
             display: inline-flex;
             align-items: center;
@@ -118,32 +118,32 @@
         }
         .brand:hover { opacity: 0.9; }
 
-        /* Navbar logo — BIG */
+        /* Navbar logo — WIDE and BIG */
         .brand-logo-img {
-            height: 80px;
-            width: auto;
-            max-width: 320px;
+            height: 90px;          /* 👈 Height thoda bada */
+            width: auto;           /* 👈 Width auto — aspect ratio se wide */
+            max-width: 420px;      /* 👈 Bahut zyada width allow */
             display: block;
             object-fit: contain;
         }
 
-        /* Footer logo — EVEN BIGGER */
+        /* Footer logo — EVEN WIDER */
         .brand-footer .brand-logo-img {
-            height: 100px;
-            max-width: 380px;
+            height: 115px;
+            max-width: 500px;      /* 👈 Aur bhi wide */
         }
 
         /* Responsive logo sizes */
         @media (max-width: 1024px) {
-            .brand-logo-img { height: 70px; max-width: 280px; }
-            .brand-footer .brand-logo-img { height: 85px; max-width: 320px; }
+            .brand-logo-img { height: 78px; max-width: 360px; }
+            .brand-footer .brand-logo-img { height: 95px; max-width: 420px; }
         }
         @media (max-width: 768px) {
-            .brand-logo-img { height: 58px; max-width: 230px; }
-            .brand-footer .brand-logo-img { height: 70px; max-width: 270px; }
+            .brand-logo-img { height: 62px; max-width: 280px; }
+            .brand-footer .brand-logo-img { height: 78px; max-width: 340px; }
         }
         @media (max-width: 480px) {
-            .brand-logo-img { height: 48px; max-width: 190px; }
+            .brand-logo-img { height: 52px; max-width: 220px; }
         }
 
         /* Social Icons */
@@ -321,8 +321,8 @@
 
     <!-- ========== NAVBAR ========== -->
     <header id="navbar">
-        <div class="wrap flex items-center justify-between" style="height:110px;">
-            <!-- ✅ PURE LOGO — BIG -->
+        <div class="wrap flex items-center justify-between" style="height:120px;">
+            <!-- ✅ PURE LOGO — WIDE + BIG -->
             <a href="index.html" class="brand" aria-label="MZ Clouds home">
                 <img 
                     src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
@@ -902,7 +902,7 @@
             });
         }
 
-        console.log('✨ MZ Clouds — Home Page with BIG Logo (Final)');
+        console.log('✨ MZ Clouds — Home Page with WIDE BIG Logo (Final)');
     </script>
 
 </body>
