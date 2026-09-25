@@ -1,0 +1,14 @@
+# robots.txt for MZ Clouds
+# https://mziaclouds.github.io/DigitalMarketingService/
+
+User-agent: *
+Allow: /
+
+# Block nothing — all pages should be crawlable
+Disallow:
+
+# Sitemap location
+Sitemap: https://mziaclouds.github.io/DigitalMarketingService/sitemap.xml
+
+# LLMs.txt for AI/LLM crawlers
+# See: https://llmstxt.org
