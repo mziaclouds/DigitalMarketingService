@@ -12,16 +12,18 @@
     <meta property="og:description" content="Let's discuss how we can help your business grow on Google." />
     <meta property="og:url" content="https://mziaclouds.github.io/DigitalMarketingService/contact.html" />
     <meta property="og:site_name" content="MZ Clouds" />
+    <meta property="og:image" content="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Contact Us – MZ Clouds" />
     <meta name="twitter:description" content="Let's discuss how we can help your business grow." />
+    <meta name="twitter:image" content="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
 
     <style>
         :root {
@@ -221,7 +223,8 @@
     <!-- ========== NAVBAR ========== -->
     <header id="navbar">
         <div class="wrap flex items-center justify-between" style="height:80px;">
-            <a href="index.html" class="flex items-center gap-3" aria-label="MZ Clouds home">
+            <!-- ✅ LOGO — Root URL -->
+            <a href="/DigitalMarketingService/" class="flex items-center gap-3" aria-label="MZ Clouds home">
                 <span style="width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,var(--navy),var(--navy-700));display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(11,27,51,0.15);">
                     <i data-lucide="cloud" style="width:20px;height:20px;color:#fff;"></i>
                 </span>
@@ -230,7 +233,8 @@
 
             <nav class="hidden lg:flex" aria-label="Primary">
                 <ul class="navlist">
-                    <li class="nav-item"><a href="index.html" class="navlink">Home</a></li>
+                    <!-- ✅ HOME — Root URL -->
+                    <li class="nav-item"><a href="/DigitalMarketingService/" class="navlink">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="services.html" class="navlink">Services <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
                         <ul class="dropdown-menu">
@@ -270,7 +274,8 @@
         <div id="mobileMenu" class="lg:hidden" style="border-top:1px solid var(--line-soft);">
             <nav class="wrap flex flex-col py-5" aria-label="Mobile">
                 <ul class="navlist">
-                    <li class="nav-item"><a href="index.html" class="navlink py-3">Home</a></li>
+                    <!-- ✅ HOME (Mobile) — Root URL -->
+                    <li class="nav-item"><a href="/DigitalMarketingService/" class="navlink py-3">Home</a></li>
                     <li class="nav-item dropdown" id="mobileDropdown">
                         <div class="navlink-wrapper">
                             <a href="services.html" class="navlink py-3">Services</a>
@@ -303,6 +308,9 @@
                             Chat on WhatsApp
                         </a>
                     </li>
+                    <li class="nav-item" style="margin-top:12px;">
+                        <a href="audit.html" class="btn btn-primary w-full">Get Free Audit <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -322,7 +330,6 @@
                     Have a project in mind? Reach out and let's discuss how we can help your business grow.
                 </p>
 
-                <!-- WhatsApp Button -->
                 <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
                     <a href="https://wa.me/923004413019?text=Hi%20MZ%20Clouds%2C%20I%20have%20a%20project%20in%20mind"
                        target="_blank" rel="noopener" class="btn-whatsapp">
@@ -393,7 +400,6 @@
 
                     <div style="display:flex;flex-direction:column;gap:20px;margin-top:32px;">
 
-                        <!-- Phone -->
                         <a href="tel:+923004413019" style="display:flex;align-items:flex-start;gap:16px;text-decoration:none;">
                             <span style="width:52px;height:52px;border-radius:14px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                                 <i data-lucide="phone" style="width:22px;height:22px;color:var(--orange);"></i>
@@ -405,19 +411,17 @@
                             </div>
                         </a>
 
-                        <!-- Email -->
-                        <a href="mailto:Mohsinzia411@gamil.com" style="display:flex;align-items:flex-start;gap:16px;text-decoration:none;">
+                        <a href="mailto:Mohsinzia411@gmail.com" style="display:flex;align-items:flex-start;gap:16px;text-decoration:none;">
                             <span style="width:52px;height:52px;border-radius:14px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                                 <i data-lucide="mail" style="width:22px;height:22px;color:var(--blue);"></i>
                             </span>
                             <div>
                                 <p style="font-size:12px;font-weight:700;color:var(--sub-light);letter-spacing:0.06em;text-transform:uppercase;">Email</p>
-                                <p style="font-size:1rem;font-weight:700;color:var(--navy);margin-top:2px;word-break:break-all;">Mohsinzia411@gamil.com</p>
+                                <p style="font-size:1rem;font-weight:700;color:var(--navy);margin-top:2px;word-break:break-all;">Mohsinzia411@gmail.com</p>
                                 <p class="body-sm" style="margin-top:2px;">We reply within 24 hours</p>
                             </div>
                         </a>
 
-                        <!-- WhatsApp -->
                         <a href="https://wa.me/923004413019?text=Hi%20MZ%20Clouds%2C%20I%20have%20a%20question"
                            target="_blank" rel="noopener" style="display:flex;align-items:flex-start;gap:16px;text-decoration:none;">
                             <span style="width:52px;height:52px;border-radius:14px;background:var(--green-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -432,7 +436,6 @@
                             </div>
                         </a>
 
-                        <!-- Hours -->
                         <div style="display:flex;align-items:flex-start;gap:16px;">
                             <span style="width:52px;height:52px;border-radius:14px;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                                 <i data-lucide="clock" style="width:22px;height:22px;color:var(--gold);"></i>
@@ -446,7 +449,6 @@
 
                     </div>
 
-                    <!-- Social Icons -->
                     <div style="margin-top:32px;">
                         <p style="font-size:12px;font-weight:700;color:var(--sub-light);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:12px;">Follow Us</p>
                         <div class="flex gap-3">
@@ -494,97 +496,147 @@
     </main>
 
     <!-- ========== FOOTER ========== -->
-    <footer style="background:#001753;padding:48px 0 0;">
-        <div class="wrap">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10" style="padding-bottom:32px;">
-                <div>
-                    <div class="flex items-center gap-3">
-                        <span style="width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;">
-                            <i data-lucide="cloud" style="width:18px;height:18px;color:var(--orange);"></i>
-                        </span>
-                        <span style="font-family:'Playfair Display',serif;font-weight:800;font-size:18px;color:#fff;">MZ <span style="color:var(--orange);">Clouds</span></span>
-                    </div>
-                    <p style="font-size:13px;color:#8195B8;margin-top:14px;line-height:1.6;">Full-service digital marketing agency helping local businesses grow on Google.</p>
+    <footer style="background:#001753;padding:64px 0 0;border-top:1px solid rgba(255,255,255,0.04);">
+        <div class="wrap grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-14">
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-3">
+                    <span style="width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);">
+                        <i data-lucide="cloud" style="width:18px;height:18px;color:var(--orange);"></i>
+                    </span>
+                    <span style="font-family:'Playfair Display',serif;font-weight:800;font-size:18px;color:#fff;">MZ <span style="color:var(--orange);">Clouds</span></span>
                 </div>
-                <div>
-                    <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Company</p>
-                    <ul style="margin-top:14px;list-style:none;display:flex;flex-direction:column;gap:10px;">
-                        <li><a href="about.html" class="contact-link">About</a></li>
-                        <li><a href="services.html" class="contact-link">Services</a></li>
-                        <li><a href="case-studies.html" class="contact-link">Case Studies</a></li>
-                        <li><a href="faq.html" class="contact-link">FAQ</a></li>
-                        <li><a href="contact.html" class="contact-link">Contact</a></li>
-                    </ul>
+                <p style="font-size:13.5px;color:#8195B8;margin-top:16px;line-height:1.65;max-width:320px;">Full-service digital marketing agency specializing in Local SEO, Google Maps ranking, website SEO, social media, and paid ads to grow your business.</p>
+                <div class="flex gap-3 mt-6">
+                    <a href="https://www.facebook.com/MZClouds/" target="_blank" rel="noopener" aria-label="Facebook" style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);transition:all 0.25s ease;"><i data-lucide="facebook" style="width:16px;height:16px;color:#8195B8;"></i></a>
+                    <a href="#" aria-label="Twitter" style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);transition:all 0.25s ease;"><i data-lucide="twitter" style="width:16px;height:16px;color:#8195B8;"></i></a>
+                    <a href="#" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);transition:all 0.25s ease;"><i data-lucide="linkedin" style="width:16px;height:16px;color:#8195B8;"></i></a>
+                    <a href="#" aria-label="Instagram" style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);transition:all 0.25s ease;"><i data-lucide="instagram" style="width:16px;height:16px;color:#8195B8;"></i></a>
                 </div>
-                <div>
-                    <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Get in Touch</p>
-                    <ul style="margin-top:14px;list-style:none;display:flex;flex-direction:column;gap:10px;">
-                        <li>
-                            <a href="tel:+923004413019" class="contact-link">
-                                <i data-lucide="phone" style="width:14px;height:14px;color:var(--orange);"></i>
-                                0300 4413019
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:Mohsinzia411@gamil.com" class="contact-link">
-                                <i data-lucide="mail" style="width:14px;height:14px;color:var(--orange);"></i>
-                                Mohsinzia411@gamil.com
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Quick Action</p>
-                    <a href="https://wa.me/923004413019?text=Hi%20MZ%20Clouds%2C%20I%20want%20a%20free%20SEO%20audit"
-                       target="_blank" rel="noopener" class="btn-whatsapp" style="margin-top:14px;font-size:12px;padding:10px 18px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:14px;height:14px;">
+            </div>
+
+            <div>
+                <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Services</p>
+                <ul style="margin-top:16px;list-style:none;display:flex;flex-direction:column;gap:10px;">
+                    <li><a href="services/local-seo-maps-ranking.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Local SEO & Maps Ranking</a></li>
+                    <li><a href="services/gbp-optimization.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">GBP Optimization</a></li>
+                    <li><a href="services/gbp-recovery.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">GBP Recovery</a></li>
+                    <li><a href="services/website-seo.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Website SEO</a></li>
+                    <li><a href="services/social-media-marketing.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Social Media Marketing</a></li>
+                    <li><a href="services/google-meta-ads.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Google & Meta Ads</a></li>
+                    <li><a href="services/local-citations.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Local Citations</a></li>
+                    <li><a href="services/review-reputation-management.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Review Management</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Industries</p>
+                <ul style="margin-top:16px;list-style:none;display:flex;flex-direction:column;gap:10px;">
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Law Firms</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Dentists</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Plumbers</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Contractors</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">HVAC</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Restaurants</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Healthcare</a></li>
+                    <li><a href="industries.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Real Estate</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Company</p>
+                <ul style="margin-top:16px;list-style:none;display:flex;flex-direction:column;gap:10px;">
+                    <li><a href="about.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">About</a></li>
+                    <li><a href="services.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Services</a></li>
+                    <li><a href="case-studies.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Case Studies</a></li>
+                    <li><a href="faq.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">FAQ</a></li>
+                    <li><a href="contact.html" style="font-size:13px;color:#8195B8;transition:color 0.2s ease;">Contact</a></li>
+                </ul>
+                <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;margin-top:22px;">Contact</p>
+                <p style="font-size:13px;color:#8195B8;margin-top:12px;">
+                    <a href="tel:+923004413019" style="color:#8195B8;transition:color 0.2s ease;">0300 4413019</a>
+                </p>
+                <p style="font-size:13px;color:#8195B8;margin-top:2px;">
+                    <a href="mailto:Mohsinzia411@gmail.com" style="color:#8195B8;transition:color 0.2s ease;">Mohsinzia411@gmail.com</a>
+                </p>
+                <div style="margin-top:16px;">
+                    <a href="https://wa.me/923004413019?text=Hi%20MZ%20Clouds%2C%20I%20need%20help%20with%20Local%20SEO"
+                       target="_blank" rel="noopener" class="btn-whatsapp" style="font-size:13px;padding:12px 24px;width:auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                         </svg>
-                        WhatsApp Us
+                        Chat on WhatsApp
                     </a>
                 </div>
             </div>
-            <div style="border-top:1px solid rgba(255,255,255,0.06);padding:16px 0;text-align:center;">
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.06);">
+            <div class="wrap flex flex-col sm:flex-row items-center justify-between gap-3" style="padding:20px 0;">
                 <p style="font-size:12px;color:#6E80A0;">© 2026 MZ Clouds. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" style="font-size:12px;color:#6E80A0;transition:color 0.2s ease;">Privacy Policy</a>
+                    <a href="#" style="font-size:12px;color:#6E80A0;transition:color 0.2s ease;">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- ========== SCRIPTS ========== -->
     <script>
-        lucide.createIcons();
+        // ✅ Safe Lucide init
+        (function() {
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                try { lucide.createIcons(); } catch (e) { console.warn('Lucide init skipped:', e); }
+            }
+        })();
 
         const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 12); }, { passive: true });
+        if (navbar) {
+            window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 12); }, { passive: true });
+        }
 
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const menuIcon = document.getElementById('menuIcon');
-        menuBtn.addEventListener('click', () => {
-            const open = mobileMenu.classList.toggle('open');
-            menuBtn.setAttribute('aria-expanded', open);
-            menuIcon.setAttribute('data-lucide', open ? 'x' : 'menu');
-            lucide.createIcons();
-        });
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                const open = mobileMenu.classList.toggle('open');
+                menuBtn.setAttribute('aria-expanded', open);
+                if (menuIcon) {
+                    menuIcon.setAttribute('data-lucide', open ? 'x' : 'menu');
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                }
+            });
+        }
+
         document.querySelectorAll('#mobileMenu a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.remove('open');
-                menuIcon.setAttribute('data-lucide', 'menu');
-                lucide.createIcons();
+                if (mobileMenu) mobileMenu.classList.remove('open');
+                if (menuIcon) {
+                    menuIcon.setAttribute('data-lucide', 'menu');
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                }
             });
         });
+
         function toggleMobileDropdown(e) {
-            e.stopPropagation();
-            document.getElementById('mobileDropdown').classList.toggle('open');
-            lucide.createIcons();
+            if (e) e.stopPropagation();
+            const el = document.getElementById('mobileDropdown');
+            if (el) el.classList.toggle('open');
+            if (typeof lucide !== 'undefined') lucide.createIcons();
         }
 
         const revealEls = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) { entry.target.classList.add('in'); revealObserver.unobserve(entry.target); }
-            });
-        }, { threshold: 0.12 });
-        revealEls.forEach(el => revealObserver.observe(el));
+        if ('IntersectionObserver' in window && revealEls.length) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) { entry.target.classList.add('in'); revealObserver.unobserve(entry.target); }
+                });
+            }, { threshold: 0.12 });
+            revealEls.forEach(el => revealObserver.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('in'));
+        }
 
         function validateField(input) {
             const wrapper = input.closest('.form-group');
@@ -618,7 +670,7 @@
             });
         }
 
-        console.log('✨ MZ Clouds — Contact Page with Facebook Link');
+        console.log('✨ MZ Clouds — Contact Page (Clean URL Final)');
     </script>
 
 </body>
