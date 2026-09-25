@@ -111,26 +111,11 @@
         .btn-whatsapp-icon:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(37, 211, 102, 0.65); background: #20BD5A; }
         .btn-whatsapp-icon svg { width: 22px; height: 22px; fill: #fff; }
 
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            transition: opacity 0.25s ease;
-            flex-shrink: 0;
-        }
+        .brand { display: inline-flex; align-items: center; transition: opacity 0.25s ease; flex-shrink: 0; }
         .brand:hover { opacity: 0.9; }
 
-        .brand-logo-img {
-            height: 90px;
-            width: auto;
-            max-width: 420px;
-            display: block;
-            object-fit: contain;
-        }
-
-        .brand-footer .brand-logo-img {
-            height: 115px;
-            max-width: 500px;
-        }
+        .brand-logo-img { height: 90px; width: auto; max-width: 420px; display: block; object-fit: contain; }
+        .brand-footer .brand-logo-img { height: 115px; max-width: 500px; }
 
         @media (max-width: 1024px) {
             .brand-logo-img { height: 78px; max-width: 360px; }
@@ -319,7 +304,7 @@
     <!-- ========== NAVBAR ========== -->
     <header id="navbar">
         <div class="wrap flex items-center justify-between" style="height:120px;">
-            <a href="/DigitalMarketingService/index.html" class="brand" aria-label="MZ Clouds home">
+            <a href="/DigitalMarketingService/" class="brand" aria-label="MZ Clouds home">
                 <img 
                     src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
                     alt="MZ Clouds – Full Digital Marketing Agency" 
@@ -329,25 +314,25 @@
 
             <nav class="hidden lg:flex" aria-label="Primary">
                 <ul class="navlist">
-                    <li class="nav-item"><a href="/DigitalMarketingService/index.html" class="navlink active">Home</a></li>
+                    <li class="nav-item"><a href="/DigitalMarketingService/" class="navlink active">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a href="/DigitalMarketingService/services.html" class="navlink">Services <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+                        <a href="services.html" class="navlink">Services <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/DigitalMarketingService/services/local-seo-maps-ranking.html">Local SEO &amp; Maps Ranking</a></li>
-                            <li><a href="/DigitalMarketingService/services/gbp-optimization.html">GBP Optimization</a></li>
-                            <li><a href="/DigitalMarketingService/services/gbp-recovery.html">GBP Recovery</a></li>
-                            <li><a href="/DigitalMarketingService/services/website-seo.html">Website SEO</a></li>
-                            <li><a href="/DigitalMarketingService/services/social-media-marketing.html">Social Media Marketing</a></li>
-                            <li><a href="/DigitalMarketingService/services/google-meta-ads.html">Google &amp; Meta Ads</a></li>
-                            <li><a href="/DigitalMarketingService/services/local-citations.html">Local Citations</a></li>
-                            <li><a href="/DigitalMarketingService/services/review-reputation-management.html">Review Management</a></li>
+                            <li><a href="services/local-seo-maps-ranking.html">Local SEO &amp; Maps Ranking</a></li>
+                            <li><a href="services/gbp-optimization.html">GBP Optimization</a></li>
+                            <li><a href="services/gbp-recovery.html">GBP Recovery</a></li>
+                            <li><a href="services/website-seo.html">Website SEO</a></li>
+                            <li><a href="services/social-media-marketing.html">Social Media Marketing</a></li>
+                            <li><a href="services/google-meta-ads.html">Google &amp; Meta Ads</a></li>
+                            <li><a href="services/local-citations.html">Local Citations</a></li>
+                            <li><a href="services/review-reputation-management.html">Review Management</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/about.html" class="navlink">About</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/case-studies.html" class="navlink">Case Studies</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/blog.html" class="navlink">Blog</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/faq.html" class="navlink">FAQ</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/contact.html" class="navlink">Contact</a></li>
+                    <li class="nav-item"><a href="about.html" class="navlink">About</a></li>
+                    <li class="nav-item"><a href="case-studies.html" class="navlink">Case Studies</a></li>
+                    <li class="nav-item"><a href="blog.html" class="navlink">Blog</a></li>
+                    <li class="nav-item"><a href="faq.html" class="navlink">FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html" class="navlink">Contact</a></li>
                 </ul>
             </nav>
 
@@ -358,7 +343,7 @@
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                     </svg>
                 </a>
-                <a href="/DigitalMarketingService/audit.html" class="btn btn-primary">Get Free Audit <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+                <a href="audit.html" class="btn btn-primary">Get Free Audit <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
             </div>
 
             <button id="menuBtn" class="lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" style="padding:8px;">
@@ -369,30 +354,30 @@
         <div id="mobileMenu" class="lg:hidden" style="border-top:1px solid var(--line-soft);">
             <nav class="wrap flex flex-col py-5" aria-label="Mobile">
                 <ul class="navlist">
-                    <li class="nav-item"><a href="/DigitalMarketingService/index.html" class="navlink active py-3">Home</a></li>
+                    <li class="nav-item"><a href="/DigitalMarketingService/" class="navlink active py-3">Home</a></li>
                     <li class="nav-item dropdown" id="mobileDropdown">
                         <div class="navlink-wrapper">
-                            <a href="/DigitalMarketingService/services.html" class="navlink py-3">Services</a>
+                            <a href="services.html" class="navlink py-3">Services</a>
                             <button class="dropdown-arrow" aria-label="Toggle services dropdown" onclick="toggleMobileDropdown(event)">
                                 <i data-lucide="chevron-down" style="width:18px;height:18px;color:var(--orange);"></i>
                             </button>
                         </div>
                         <ul class="dropdown-menu">
-                            <li><a href="/DigitalMarketingService/services/local-seo-maps-ranking.html">Local SEO &amp; Maps Ranking</a></li>
-                            <li><a href="/DigitalMarketingService/services/gbp-optimization.html">GBP Optimization</a></li>
-                            <li><a href="/DigitalMarketingService/services/gbp-recovery.html">GBP Recovery</a></li>
-                            <li><a href="/DigitalMarketingService/services/website-seo.html">Website SEO</a></li>
-                            <li><a href="/DigitalMarketingService/services/social-media-marketing.html">Social Media Marketing</a></li>
-                            <li><a href="/DigitalMarketingService/services/google-meta-ads.html">Google &amp; Meta Ads</a></li>
-                            <li><a href="/DigitalMarketingService/services/local-citations.html">Local Citations</a></li>
-                            <li><a href="/DigitalMarketingService/services/review-reputation-management.html">Review Management</a></li>
+                            <li><a href="services/local-seo-maps-ranking.html">Local SEO &amp; Maps Ranking</a></li>
+                            <li><a href="services/gbp-optimization.html">GBP Optimization</a></li>
+                            <li><a href="services/gbp-recovery.html">GBP Recovery</a></li>
+                            <li><a href="services/website-seo.html">Website SEO</a></li>
+                            <li><a href="services/social-media-marketing.html">Social Media Marketing</a></li>
+                            <li><a href="services/google-meta-ads.html">Google &amp; Meta Ads</a></li>
+                            <li><a href="services/local-citations.html">Local Citations</a></li>
+                            <li><a href="services/review-reputation-management.html">Review Management</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/about.html" class="navlink py-3">About</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/case-studies.html" class="navlink py-3">Case Studies</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/blog.html" class="navlink py-3">Blog</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/faq.html" class="navlink py-3">FAQ</a></li>
-                    <li class="nav-item"><a href="/DigitalMarketingService/contact.html" class="navlink py-3">Contact</a></li>
+                    <li class="nav-item"><a href="about.html" class="navlink py-3">About</a></li>
+                    <li class="nav-item"><a href="case-studies.html" class="navlink py-3">Case Studies</a></li>
+                    <li class="nav-item"><a href="blog.html" class="navlink py-3">Blog</a></li>
+                    <li class="nav-item"><a href="faq.html" class="navlink py-3">FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html" class="navlink py-3">Contact</a></li>
                     <li class="nav-item" style="margin-top:12px;">
                         <a href="https://wa.me/923004413019?text=Hi%20MZ%20Clouds%2C%20I%20need%20help%20with%20Local%20SEO"
                            target="_blank" rel="noopener" class="btn-whatsapp" style="width:100%;">
@@ -429,7 +414,7 @@
                             </svg>
                             WHATSAPP
                         </a>
-                        <a href="/DigitalMarketingService/case-studies.html" class="btn btn-navy">SEE OUR RESULTS</a>
+                        <a href="case-studies.html" class="btn btn-navy">SEE OUR RESULTS</a>
                     </div>
                     <div class="flex flex-wrap gap-x-6 gap-y-3 mt-10">
                         <span class="chip"><i data-lucide="check-circle-2" style="width:16px;height:16px;color:var(--orange);"></i> Local SEO Experts</span>
@@ -521,53 +506,53 @@
                         <span class="icon-bg-orange" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="map-pin" style="width:22px;height:22px;color:var(--orange);"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">Local SEO &amp; Maps Ranking</h3>
                         <p class="body-sm" style="margin-top:6px;">Rank higher on Google Maps and local search results to attract nearby customers.</p>
-                        <a href="/DigitalMarketingService/services/local-seo-maps-ranking.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/local-seo-maps-ranking.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:1;">
                         <span class="icon-bg-blue" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="store" style="width:22px;height:22px;color:var(--blue);"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">GBP Optimization</h3>
                         <p class="body-sm" style="margin-top:6px;">Optimize your GBP to attract more customers, build trust, and dominate local search.</p>
-                        <a href="/DigitalMarketingService/services/gbp-optimization.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/gbp-optimization.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:2;">
                         <span class="icon-bg-purple" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="shield-check" style="width:22px;height:22px;color:#6C4FE0;"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">GBP Recovery</h3>
                         <p class="body-sm" style="margin-top:6px;">Recover suspended or restricted Google Business Profiles quickly.</p>
-                        <a href="/DigitalMarketingService/services/gbp-recovery.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/gbp-recovery.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:3;">
                         <span class="icon-bg-green" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="globe" style="width:22px;height:22px;color:var(--green);"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">Website SEO</h3>
                         <p class="body-sm" style="margin-top:6px;">On-page, off-page, and technical SEO to drive organic traffic and rankings.</p>
-                        <a href="/DigitalMarketingService/services/website-seo.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/website-seo.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:4;">
                         <span class="icon-bg-pink" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="share-2" style="width:22px;height:22px;color:#E0457F;"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">Social Media Marketing</h3>
                         <p class="body-sm" style="margin-top:6px;">Build your brand, engage your audience, and drive leads on social platforms.</p>
-                        <a href="/DigitalMarketingService/services/social-media-marketing.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/social-media-marketing.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:5;">
                         <span class="icon-bg-gold" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="megaphone" style="width:22px;height:22px;color:var(--gold);"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">Google &amp; Meta Ads</h3>
                         <p class="body-sm" style="margin-top:6px;">Run high-converting PPC campaigns on Google, Facebook, and Instagram.</p>
-                        <a href="/DigitalMarketingService/services/google-meta-ads.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/google-meta-ads.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:6;">
                         <span class="icon-bg-teal" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="link-2" style="width:22px;height:22px;color:#148C84;"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">Local Citations</h3>
                         <p class="body-sm" style="margin-top:6px;">Build consistent business information across trusted directories.</p>
-                        <a href="/DigitalMarketingService/services/local-citations.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/local-citations.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                     <div class="card card-glow reveal p-6" style="--i:7;">
                         <span class="icon-bg-indigo" style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;"><i data-lucide="star" style="width:22px;height:22px;color:#4F46E5;"></i></span>
                         <h3 class="heading-md" style="font-size:1rem;margin-top:16px;">Review &amp; Reputation</h3>
                         <p class="body-sm" style="margin-top:6px;">Build a stronger online reputation through more 5-star reviews.</p>
-                        <a href="/DigitalMarketingService/services/review-reputation-management.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                        <a href="services/review-reputation-management.html" class="chip mt-3" style="color:var(--orange);gap:6px;font-weight:700;font-size:12px;">Learn More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
                     </div>
                 </div>
                 <div class="text-center mt-10 reveal">
-                    <a href="/DigitalMarketingService/services.html" class="btn btn-outline">View All Services <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+                    <a href="services.html" class="btn btn-outline">View All Services <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
                 </div>
             </div>
         </section>
@@ -672,7 +657,7 @@
         <div class="wrap">
             <div class="grid lg:grid-cols-2 gap-12 pb-14" style="border-bottom:1px solid rgba(255,255,255,0.06);">
                 <div>
-                    <a href="/DigitalMarketingService/index.html" class="brand brand-footer" aria-label="MZ Clouds home">
+                    <a href="/DigitalMarketingService/" class="brand brand-footer" aria-label="MZ Clouds home">
                         <img 
                             src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
                             alt="MZ Clouds – Full Digital Marketing Agency" 
@@ -732,39 +717,39 @@
                 <div>
                     <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Services</p>
                     <ul style="margin-top:18px;list-style:none;display:flex;flex-direction:column;gap:12px;">
-                        <li><a href="/DigitalMarketingService/services/local-seo-maps-ranking.html" class="contact-link">Local SEO & Maps Ranking</a></li>
-                        <li><a href="/DigitalMarketingService/services/gbp-optimization.html" class="contact-link">GBP Optimization</a></li>
-                        <li><a href="/DigitalMarketingService/services/gbp-recovery.html" class="contact-link">GBP Recovery</a></li>
-                        <li><a href="/DigitalMarketingService/services/website-seo.html" class="contact-link">Website SEO</a></li>
-                        <li><a href="/DigitalMarketingService/services/social-media-marketing.html" class="contact-link">Social Media Marketing</a></li>
-                        <li><a href="/DigitalMarketingService/services/google-meta-ads.html" class="contact-link">Google & Meta Ads</a></li>
-                        <li><a href="/DigitalMarketingService/services/local-citations.html" class="contact-link">Local Citations</a></li>
-                        <li><a href="/DigitalMarketingService/services/review-reputation-management.html" class="contact-link">Review Management</a></li>
+                        <li><a href="services/local-seo-maps-ranking.html" class="contact-link">Local SEO & Maps Ranking</a></li>
+                        <li><a href="services/gbp-optimization.html" class="contact-link">GBP Optimization</a></li>
+                        <li><a href="services/gbp-recovery.html" class="contact-link">GBP Recovery</a></li>
+                        <li><a href="services/website-seo.html" class="contact-link">Website SEO</a></li>
+                        <li><a href="services/social-media-marketing.html" class="contact-link">Social Media Marketing</a></li>
+                        <li><a href="services/google-meta-ads.html" class="contact-link">Google & Meta Ads</a></li>
+                        <li><a href="services/local-citations.html" class="contact-link">Local Citations</a></li>
+                        <li><a href="services/review-reputation-management.html" class="contact-link">Review Management</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Industries</p>
                     <ul style="margin-top:18px;list-style:none;display:flex;flex-direction:column;gap:12px;">
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Law Firms</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Dentists</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Plumbers</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Contractors</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">HVAC</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Restaurants</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Healthcare</a></li>
-                        <li><a href="/DigitalMarketingService/industries.html" class="contact-link">Real Estate</a></li>
+                        <li><a href="industries.html" class="contact-link">Law Firms</a></li>
+                        <li><a href="industries.html" class="contact-link">Dentists</a></li>
+                        <li><a href="industries.html" class="contact-link">Plumbers</a></li>
+                        <li><a href="industries.html" class="contact-link">Contractors</a></li>
+                        <li><a href="industries.html" class="contact-link">HVAC</a></li>
+                        <li><a href="industries.html" class="contact-link">Restaurants</a></li>
+                        <li><a href="industries.html" class="contact-link">Healthcare</a></li>
+                        <li><a href="industries.html" class="contact-link">Real Estate</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <p style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;">Company</p>
                     <ul style="margin-top:18px;list-style:none;display:flex;flex-direction:column;gap:12px;">
-                        <li><a href="/DigitalMarketingService/about.html" class="contact-link">About</a></li>
-                        <li><a href="/DigitalMarketingService/services.html" class="contact-link">Services</a></li>
-                        <li><a href="/DigitalMarketingService/case-studies.html" class="contact-link">Case Studies</a></li>
-                        <li><a href="/DigitalMarketingService/faq.html" class="contact-link">FAQ</a></li>
-                        <li><a href="/DigitalMarketingService/contact.html" class="contact-link">Contact</a></li>
+                        <li><a href="about.html" class="contact-link">About</a></li>
+                        <li><a href="services.html" class="contact-link">Services</a></li>
+                        <li><a href="case-studies.html" class="contact-link">Case Studies</a></li>
+                        <li><a href="faq.html" class="contact-link">FAQ</a></li>
+                        <li><a href="contact.html" class="contact-link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -918,7 +903,7 @@
             });
         }
 
-        console.log('✨ MZ Clouds — Home Page (GitHub Pages URL Final)');
+        console.log('✨ MZ Clouds — Home Page (Clean URL Final)');
     </script>
 
 </body>
