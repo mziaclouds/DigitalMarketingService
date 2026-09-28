@@ -111,6 +111,24 @@
         .btn-whatsapp-icon:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(37, 211, 102, 0.65); background: #20BD5A; }
         .btn-whatsapp-icon svg { width: 22px; height: 22px; fill: #fff; }
 
+        /* ─── BRAND LOGO CSS (Added to match Home Page) ─── */
+        .brand { display: inline-flex; align-items: center; transition: opacity 0.25s ease; flex-shrink: 0; }
+        .brand:hover { opacity: 0.9; }
+        .brand-logo-img { height: 90px; width: auto; max-width: 420px; display: block; object-fit: contain; }
+        .brand-footer .brand-logo-img { height: 115px; max-width: 500px; }
+        
+        @media (max-width: 1024px) {
+            .brand-logo-img { height: 78px; max-width: 360px; }
+            .brand-footer .brand-logo-img { height: 95px; max-width: 420px; }
+        }
+        @media (max-width: 768px) {
+            .brand-logo-img { height: 62px; max-width: 280px; }
+            .brand-footer .brand-logo-img { height: 78px; max-width: 340px; }
+        }
+        @media (max-width: 480px) {
+            .brand-logo-img { height: 52px; max-width: 220px; }
+        }
+
         .social-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.04); transition: all 0.25s ease; }
         .social-icon:hover { transform: translateY(-2px); }
         .social-icon svg { width: 18px; height: 18px; color: #fff; }
@@ -222,18 +240,20 @@
 
     <!-- ========== NAVBAR ========== -->
     <header id="navbar">
-        <div class="wrap flex items-center justify-between" style="height:80px;">
-            <!-- ✅ LOGO — Root URL -->
-            <a href="/DigitalMarketingService/" class="flex items-center gap-3" aria-label="MZ Clouds home">
-                <span style="width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,var(--navy),var(--navy-700));display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(11,27,51,0.15);">
-                    <i data-lucide="cloud" style="width:20px;height:20px;color:#fff;"></i>
-                </span>
-                <span style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:20px;color:var(--navy);letter-spacing:-0.01em;">MZ <span style="color:var(--orange);">Clouds</span></span>
+        <!-- Height changed to 120px to fit the logo perfectly like homepage -->
+        <div class="wrap flex items-center justify-between" style="height:120px;">
+            
+            <!-- ✅ NEW IMAGE LOGO ADDED HERE -->
+            <a href="/DigitalMarketingService/" class="brand" aria-label="MZ Clouds home">
+                <img 
+                    src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
+                    alt="MZ Clouds – Full Digital Marketing Agency" 
+                    class="brand-logo-img"
+                />
             </a>
 
             <nav class="hidden lg:flex" aria-label="Primary">
                 <ul class="navlist">
-                    <!-- ✅ HOME — Root URL -->
                     <li class="nav-item"><a href="/DigitalMarketingService/" class="navlink">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="services.html" class="navlink">Services <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
@@ -274,7 +294,6 @@
         <div id="mobileMenu" class="lg:hidden" style="border-top:1px solid var(--line-soft);">
             <nav class="wrap flex flex-col py-5" aria-label="Mobile">
                 <ul class="navlist">
-                    <!-- ✅ HOME (Mobile) — Root URL -->
                     <li class="nav-item"><a href="/DigitalMarketingService/" class="navlink py-3">Home</a></li>
                     <li class="nav-item dropdown" id="mobileDropdown">
                         <div class="navlink-wrapper">
@@ -499,12 +518,16 @@
     <footer style="background:#001753;padding:64px 0 0;border-top:1px solid rgba(255,255,255,0.04);">
         <div class="wrap grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-14">
             <div class="lg:col-span-2">
-                <div class="flex items-center gap-3">
-                    <span style="width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);">
-                        <i data-lucide="cloud" style="width:18px;height:18px;color:var(--orange);"></i>
-                    </span>
-                    <span style="font-family:'Playfair Display',serif;font-weight:800;font-size:18px;color:#fff;">MZ <span style="color:var(--orange);">Clouds</span></span>
-                </div>
+                
+                <!-- ✅ FOOTER IMAGE LOGO ADDED HERE -->
+                <a href="/DigitalMarketingService/" class="brand brand-footer" aria-label="MZ Clouds home">
+                    <img 
+                        src="https://mziaclouds.github.io/DigitalMarketingService/image/logo.png" 
+                        alt="MZ Clouds – Full Digital Marketing Agency" 
+                        class="brand-logo-img"
+                    />
+                </a>
+                
                 <p style="font-size:13.5px;color:#8195B8;margin-top:16px;line-height:1.65;max-width:320px;">Full-service digital marketing agency specializing in Local SEO, Google Maps ranking, website SEO, social media, and paid ads to grow your business.</p>
                 <div class="flex gap-3 mt-6">
                     <a href="https://www.facebook.com/MZClouds/" target="_blank" rel="noopener" aria-label="Facebook" style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);transition:all 0.25s ease;"><i data-lucide="facebook" style="width:16px;height:16px;color:#8195B8;"></i></a>
