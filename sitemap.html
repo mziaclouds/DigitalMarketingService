@@ -55,8 +55,7 @@
         .link-list a i { width: 16px; height: 16px; color: var(--orange); }
 
         .grid { display: grid; gap: 32px; }
-        @media (min-width: 768px) { .grid-cols-2 { grid-template-columns: repeat(2, 1fr); } .grid-cols-3 { grid-template-columns: repeat(3, 1fr); } }
-        @media (min-width: 1024px) { .grid-cols-3 { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 768px) { .grid-cols-2 { grid-template-columns: repeat(2, 1fr); } }
 
         /* ─── FOOTER UTILS ─── */
         .flex { display: flex; } .items-center { align-items: center; } .justify-between { justify-content: space-between; }
@@ -106,7 +105,8 @@
 
         <!-- Sitemap Grid -->
         <section style="padding:40px 0 80px;background:#fff;">
-            <div class="wrap grid grid-cols-3">
+            <!-- Grid changed to 2 columns and centered -->
+            <div class="wrap grid grid-cols-2" style="max-width: 900px; margin: 0 auto;">
                 
                 <!-- Main Pages -->
                 <div class="card">
@@ -146,32 +146,6 @@
                         <li><a href="services/local-citations.html"><i data-lucide="chevron-right"></i> Local Citations</a></li>
                         <li><a href="services/review-reputation-management.html"><i data-lucide="chevron-right"></i> Review Management</a></li>
                     </ul>
-                </div>
-
-                <!-- Industries & Legal -->
-                <div class="card">
-                    <div class="flex items-center gap-3">
-                        <span style="width:40px;height:40px;border-radius:12px;background:#E6F7F0;display:flex;align-items:center;justify-content:center;">
-                            <i data-lucide="building" style="width:20px;height:20px;color:#16A672;"></i>
-                        </span>
-                        <h2 class="heading-md" style="font-size:1.1rem;">Industries & Legal</h2>
-                    </div>
-                    <ul class="link-list">
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Law Firms</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Dentists</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Plumbers</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Contractors</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> HVAC</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Restaurants</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Healthcare</a></li>
-                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Real Estate</a></li>
-                    </ul>
-                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--line-soft);">
-                        <ul class="link-list" style="margin-top:0;">
-                            <li><a href="#"><i data-lucide="shield"></i> Privacy Policy</a></li>
-                            <li><a href="#"><i data-lucide="file-text"></i> Terms of Service</a></li>
-                        </ul>
-                    </div>
                 </div>
 
             </div>
