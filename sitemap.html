@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap – MZ Clouds | All Pages Directory</title>
+    <meta name="description" content="Complete sitemap of MZ Clouds. Find all our digital marketing services, company pages, and resources in one place." />
+    <link rel="canonical" href="https://mziaclouds.github.io/DigitalMarketingService/sitemap.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+
+    <style>
+        /* ─── ROOT & RESET (Same as your main site) ─── */
+        :root {
+            --navy: #0B1B33; --navy-700: #1A3A66; --ink: #0F1A2E; --paper: #FFFFFF;
+            --paper-soft: #F5F7FC; --line-soft: #EFF2F8; --sub: #5C6B85;
+            --orange: #E56B1F; --orange-dark: #C45510; --orange-soft: #FFEDE3;
+            --gold: #C8A45C; --gold-soft: #FDF8EE;
+            --shadow-sm: 0 2px 12px rgba(11, 27, 51, 0.04);
+            --shadow-md: 0 12px 40px rgba(11, 27, 51, 0.06);
+            --radius-md: 16px; --radius-sm: 10px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+        .heading-xl { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: var(--navy); }
+        .heading-md { font-size: 1.25rem; font-weight: 700; line-height: 1.3; color: var(--navy); }
+        .body-lg { font-size: 1.1rem; line-height: 1.7; color: var(--sub); }
+        .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); background: var(--orange-soft); padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(229, 107, 31, 0.15); }
+        .text-orange { color: var(--orange); }
+
+        /* ─── NAVBAR ─── */
+        #navbar { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(18px); border-bottom: 1px solid var(--line-soft); box-shadow: 0 4px 32px -16px rgba(11, 27, 51, 0.12); }
+        .navlist { display: flex; align-items: center; gap: 10px; list-style: none; margin: 0; padding: 0; }
+        .navlink { color: var(--sub); font-weight: 600; font-size: 14px; position: relative; transition: color 0.25s ease; display: inline-flex; align-items: center; gap: 4px; }
+        .navlink:hover { color: var(--navy); }
+        .navlink.active { color: var(--navy); }
+
+        /* ─── CARDS FOR SITEMAP ─── */
+        .card { background: #fff; border: 1px solid var(--line-soft); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); transition: all 0.3s ease; padding: 32px; }
+        .card:hover { box-shadow: var(--shadow-md); border-color: rgba(229, 107, 31, 0.2); transform: translateY(-2px); }
+        
+        .link-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+        .link-list a { color: var(--sub); font-weight: 500; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease; }
+        .link-list a:hover { color: var(--orange); transform: translateX(4px); }
+        .link-list a i { width: 16px; height: 16px; color: var(--orange); }
+
+        .grid { display: grid; gap: 32px; }
+        @media (min-width: 768px) { .grid-cols-2 { grid-template-columns: repeat(2, 1fr); } .grid-cols-3 { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 1024px) { .grid-cols-3 { grid-template-columns: repeat(3, 1fr); } }
+
+        /* ─── FOOTER UTILS ─── */
+        .flex { display: flex; } .items-center { align-items: center; } .justify-between { justify-content: space-between; }
+        .gap-3 { gap: 12px; } .flex-col { flex-direction: column; } .w-full { width: 100%; }
+        .sm\:flex-row { flex-direction: row; } .py-5 { padding: 20px 0; }
+        @media (min-width: 640px) { .sm\:flex-row { flex-direction: row; } }
+        .hidden { display: none; }
+        @media (min-width: 1025px) { .lg\:flex { display: flex !important; } .lg\:hidden { display: none !important; } }
+    </style>
+</head>
+<body>
+
+    <!-- ========== NAVBAR (Same as your site) ========== -->
+    <header id="navbar">
+        <div class="wrap flex items-center justify-between" style="height:80px;">
+            <a href="/DigitalMarketingService/" class="flex items-center gap-3" aria-label="MZ Clouds home">
+                <span style="width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,var(--navy),var(--navy-700));display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(11,27,51,0.15);">
+                    <i data-lucide="cloud" style="width:20px;height:20px;color:#fff;"></i>
+                </span>
+                <span style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:20px;color:var(--navy);letter-spacing:-0.01em;">MZ <span style="color:var(--orange);">Clouds</span></span>
+            </a>
+
+            <nav class="hidden lg:flex" aria-label="Primary">
+                <ul class="navlist">
+                    <li><a href="/DigitalMarketingService/" class="navlink">Home</a></li>
+                    <li><a href="services.html" class="navlink">Services</a></li>
+                    <li><a href="about.html" class="navlink">About</a></li>
+                    <li><a href="case-studies.html" class="navlink">Case Studies</a></li>
+                    <li><a href="blog.html" class="navlink">Blog</a></li>
+                    <li><a href="faq.html" class="navlink">FAQ</a></li>
+                    <li><a href="contact.html" class="navlink">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- Hero -->
+        <section style="padding:80px 0 40px;background:linear-gradient(180deg, #FAF8F6 0%, #FFFFFF 100%);">
+            <div class="wrap text-center">
+                <span class="eyebrow"><i data-lucide="map" style="width:14px;height:14px;"></i> Directory</span>
+                <h1 class="heading-xl" style="margin-top:18px;">Website <span class="text-orange">Sitemap</span></h1>
+                <p class="body-lg" style="max-width:600px;margin:16px auto 0;">Browse all pages on MZ Clouds. This page helps visitors and search engines navigate our website easily.</p>
+            </div>
+        </section>
+
+        <!-- Sitemap Grid -->
+        <section style="padding:40px 0 80px;background:#fff;">
+            <div class="wrap grid grid-cols-3">
+                
+                <!-- Main Pages -->
+                <div class="card">
+                    <div class="flex items-center gap-3">
+                        <span style="width:40px;height:40px;border-radius:12px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;">
+                            <i data-lucide="layout" style="width:20px;height:20px;color:var(--orange);"></i>
+                        </span>
+                        <h2 class="heading-md" style="font-size:1.1rem;">Main Pages</h2>
+                    </div>
+                    <ul class="link-list">
+                        <li><a href="/DigitalMarketingService/"><i data-lucide="chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i data-lucide="chevron-right"></i> About Us</a></li>
+                        <li><a href="services.html"><i data-lucide="chevron-right"></i> All Services</a></li>
+                        <li><a href="case-studies.html"><i data-lucide="chevron-right"></i> Case Studies</a></li>
+                        <li><a href="blog.html"><i data-lucide="chevron-right"></i> Blog</a></li>
+                        <li><a href="faq.html"><i data-lucide="chevron-right"></i> FAQ</a></li>
+                        <li><a href="contact.html"><i data-lucide="chevron-right"></i> Contact Us</a></li>
+                        <li><a href="audit.html"><i data-lucide="chevron-right"></i> Get Free Audit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="card">
+                    <div class="flex items-center gap-3">
+                        <span style="width:40px;height:40px;border-radius:12px;background:#E9F0FE;display:flex;align-items:center;justify-content:center;">
+                            <i data-lucide="briefcase" style="width:20px;height:20px;color:#2F6FED;"></i>
+                        </span>
+                        <h2 class="heading-md" style="font-size:1.1rem;">Our Services</h2>
+                    </div>
+                    <ul class="link-list">
+                        <li><a href="services/local-seo-maps-ranking.html"><i data-lucide="chevron-right"></i> Local SEO & Maps Ranking</a></li>
+                        <li><a href="services/gbp-optimization.html"><i data-lucide="chevron-right"></i> GBP Optimization</a></li>
+                        <li><a href="services/gbp-recovery.html"><i data-lucide="chevron-right"></i> GBP Recovery</a></li>
+                        <li><a href="services/website-seo.html"><i data-lucide="chevron-right"></i> Website SEO</a></li>
+                        <li><a href="services/social-media-marketing.html"><i data-lucide="chevron-right"></i> Social Media Marketing</a></li>
+                        <li><a href="services/google-meta-ads.html"><i data-lucide="chevron-right"></i> Google & Meta Ads</a></li>
+                        <li><a href="services/local-citations.html"><i data-lucide="chevron-right"></i> Local Citations</a></li>
+                        <li><a href="services/review-reputation-management.html"><i data-lucide="chevron-right"></i> Review Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Industries & Legal -->
+                <div class="card">
+                    <div class="flex items-center gap-3">
+                        <span style="width:40px;height:40px;border-radius:12px;background:#E6F7F0;display:flex;align-items:center;justify-content:center;">
+                            <i data-lucide="building" style="width:20px;height:20px;color:#16A672;"></i>
+                        </span>
+                        <h2 class="heading-md" style="font-size:1.1rem;">Industries & Legal</h2>
+                    </div>
+                    <ul class="link-list">
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Law Firms</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Dentists</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Plumbers</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Contractors</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> HVAC</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Restaurants</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Healthcare</a></li>
+                        <li><a href="industries.html"><i data-lucide="chevron-right"></i> Real Estate</a></li>
+                    </ul>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--line-soft);">
+                        <ul class="link-list" style="margin-top:0;">
+                            <li><a href="#"><i data-lucide="shield"></i> Privacy Policy</a></li>
+                            <li><a href="#"><i data-lucide="file-text"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER (Simplified with Sitemap Link) ========== -->
+    <footer style="background:#001753;padding:48px 0 24px;border-top:1px solid rgba(255,255,255,0.04);">
+        <div class="wrap flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p style="font-size:13px;color:#6E80A0;">© 2026 MZ Clouds. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="sitemap.html" style="font-size:13px;color:#E56B1F;font-weight:600;transition:color 0.2s ease;">Sitemap</a>
+                <a href="#" style="font-size:13px;color:#6E80A0;transition:color 0.2s ease;">Privacy Policy</a>
+                <a href="#" style="font-size:13px;color:#6E80A0;transition:color 0.2s ease;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Safe Lucide init
+        if (typeof lucide !== 'undefined' && lucide.createIcons) {
+            try { lucide.createIcons(); } catch (e) { console.warn('Lucide init skipped:', e); }
+        }
+    </script>
+</body>
+</html>
